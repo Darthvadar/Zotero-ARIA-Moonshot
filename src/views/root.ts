@@ -43,8 +43,8 @@ export class ReactRoot {
       removeIfExists: true,
       attributes: {
         class: 'zotero-tb-button',
-        tooltiptext: 'Launch Aria',
-        style: 'list-style-image: url(chrome://aria/content/icons/favicon@16x16.png)',
+        tooltiptext: 'Launch Aria (Moonshot AI)',
+        style: 'list-style-image: url(chrome://aria-ms/content/icons/favicon@16x16.png)',
       },
       listeners: [
         {
@@ -88,7 +88,7 @@ export class ReactRoot {
     const left = window.screenX + window.outerWidth / 2 - dialogWidth / 2
     const top = window.screenY + window.outerHeight / 2 - dialogHeight / 2
     const dialog = (window as any).openDialog(
-      'chrome://aria/content/popup.xul',
+      'chrome://aria-ms/content/popup.xul',
       `${config.addonRef}-aria`,
       `chrome,titlebar,status,width=${dialogWidth},height=${dialogHeight},left=${left},top=${top},resizable=yes`,
       windowArgs

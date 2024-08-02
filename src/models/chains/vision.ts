@@ -150,11 +150,11 @@ interface LoadVisionChainInput {
 export const loadVisionChain = (params: LoadVisionChainInput) => {
   const OPENAI_API_KEY = (Zotero.Prefs.get(`${config.addonRef}.OPENAI_API_KEY`) as string) || 'YOUR_OPENAI_API_KEY'
   const OPENAI_BASE_URL =
-    (Zotero.Prefs.get(`${config.addonRef}.OPENAI_BASE_URL`) as string) || 'https://api.openai.com/v1'
+    (Zotero.Prefs.get(`${config.addonRef}.OPENAI_BASE_URL`) as string) || 'https://api.moonshot.cn/v1'
   const llm = new ChatOpenAI({
     temperature: 0,
     openAIApiKey: OPENAI_API_KEY,
-    modelName: 'gpt-4-vision-preview',
+    modelName: 'moonshot-v1-32k',
     maxTokens: 4096,
     configuration: {
       baseURL: OPENAI_BASE_URL,

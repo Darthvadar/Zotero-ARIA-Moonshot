@@ -2,9 +2,9 @@
 <!ENTITY zotero.__addonRef__.itemmenu.test.label "addon template">
 <!ENTITY zotero.__addonRef__.pref.enable.label "Enable">
 <!ENTITY zotero.__addonRef__.pref.model_configuration_label "Model Configuration">
-<!ENTITY zotero.__addonRef__.pref.OPENAI_MODEL.label "OpenAI Model">
-<!ENTITY zotero.__addonRef__.pref.OPENAI_API_KEY.label "OpenAI API Key">
-<!ENTITY zotero.__addonRef__.pref.OPENAI_BASE_URL.label "OpenAI API Base URL">
+<!ENTITY zotero.__addonRef__.pref.OPENAI_MODEL.label "Moonshot AI Model">
+<!ENTITY zotero.__addonRef__.pref.OPENAI_API_KEY.label "Moonshot AI API Key">
+<!ENTITY zotero.__addonRef__.pref.OPENAI_BASE_URL.label "Moonshot AI API Base URL">
 <!ENTITY zotero.__addonRef__.pref.ui_customization_label "UI Customization">
 <!ENTITY zotero.__addonRef__.pref.DEFAULT_ZOOM_LEVEL.label "Default Zoom Level (&#37;)">
 <!ENTITY zotero.__addonRef__.pref.keyboard_shortcut_label "Keyboard Shortcut">

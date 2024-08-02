@@ -1,14 +1,14 @@
 {
-  "name": "aria",
-  "version": "0.7.1",
-  "description": "AI Research Assistant Powered by Large Language Models",
+  "name": "aria-ms",
+  "version": "0.7.1-ms",
+  "description": "AI Research Assistant Powered by Large Language Models (Moonshot API)",
   "config": {
-    "addonName": "Aria",
-    "addonID": "aria@apex974.com",
-    "addonRef": "aria",
-    "addonInstance": "Aria",
+    "addonName": "Aria (Moonshot)",
+    "addonID": "aria-ms@test.com",
+    "addonRef": "aria-ms",
+    "addonInstance": "Aria (Moonshot)",
     "releasepage": "https://github.com/lifan0127/ai-research-assistant/releases/latest/download/aria.xpi",
-    "updaterdf": "https://raw.githubusercontent.com/lifan0127/ai-research-assistant/bootstrap/update.json"
+    "updaterdf": "https://github.com/Darthvadar/Zotero-ARIA-Moonshot/blob/main/update.rdf"
   },
   "main": "src/index.ts",
   "scripts": {
@@ -34,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lifan0127/ai-research-assistant.git"
+    "url": "git+https://github.com/Darthvadar/Zotero-ARIA-Moonshot.git"
   },
   "author": "Fan Li",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/lifan0127/ai-research-assistant/issues"
+    "url": "https://github.com/Darthvadar/Zotero-ARIA-Moonshot/issues"
   },
-  "homepage": "https://github.com/lifan0127/ai-research-assistant#readme",
+  "homepage": "https://github.com/Darthvadar/Zotero-ARIA-Moonshot#readme",
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.13",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
