@@ -274,7 +274,7 @@ export const loadSearchChain = (params: LoadSearchChainInput) => {
   const OPENAI_BASE_URL =
     (Zotero.Prefs.get(`${config.addonRef}.OPENAI_BASE_URL`) as string) || 'https://api.moonshot.cn/v1'
   const llm = new ChatOpenAI({
-    temperature: 0,
+    temperature: 0.3, // 0.3 is recommended by Kimi API
     openAIApiKey: OPENAI_API_KEY,
     modelName: OPENAI_MODEL,
     configuration: {

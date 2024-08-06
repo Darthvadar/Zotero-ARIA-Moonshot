@@ -149,12 +149,13 @@ interface LoadVisionChainInput {
 
 export const loadVisionChain = (params: LoadVisionChainInput) => {
   const OPENAI_API_KEY = (Zotero.Prefs.get(`${config.addonRef}.OPENAI_API_KEY`) as string) || 'YOUR_OPENAI_API_KEY'
+  const OPENAI_MODEL = (Zotero.Prefs.get(`${config.addonRef}.OPENAI_MODEL`) as string) || 'moonshot-v1-32k'
   const OPENAI_BASE_URL =
     (Zotero.Prefs.get(`${config.addonRef}.OPENAI_BASE_URL`) as string) || 'https://api.moonshot.cn/v1'
   const llm = new ChatOpenAI({
-    temperature: 0,
+    temperature: 0.3, // 0.3 is recommended by Kimi API
     openAIApiKey: OPENAI_API_KEY,
-    modelName: 'moonshot-v1-32k',
+    modelName: OPENAI_MODEL,
     maxTokens: 4096,
     configuration: {
       baseURL: OPENAI_BASE_URL,
